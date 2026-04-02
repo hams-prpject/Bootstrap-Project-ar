@@ -1,6 +1,5 @@
-const printEl = document.getElementById("typing-effect");
+const printEl = document.getElementById("typing");
 const phrases = ['تشخيص أولي فوري', 'حجز مواعيد سهل', 'رعاية صحية متكاملة'];
-
 let phraseIndex = 0; // أي جملة نحن الآن؟
 let charIndex = 0;   // أي حرف نحن الآن؟
 let isDeleting = false; // هل نحن في مرحلة المسح؟
@@ -36,5 +35,25 @@ function type() {
 
     setTimeout(type, typeSpeed);
 }
-
 type();
+
+
+// number run section
+const numElements = document.querySelectorAll(".numValue");
+numElements.forEach((numEl) => {
+    const val = +numEl.getAttribute("data-num");
+    let currentVal = 0;
+    const duration = 500;
+    const timeRun = 10
+    const increment = val / (duration / timeRun);
+
+    let counter = setInterval(() => {
+        currentVal += increment;
+        if (currentVal >= val) {
+            numEl.innerText = val;
+            clearInterval(counter);
+        } else {
+            numEl.innerText = Math.ceil(currentVal);
+        }
+    }, timeRun);
+});

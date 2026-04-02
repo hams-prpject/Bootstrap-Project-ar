@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap");
-
 .almarai-light {
   font-family: "Almarai", sans-serif;
   font-weight: 300;
@@ -82,4 +81,40 @@ nav {
   100% {
     opacity: 1;
   }
+}
+
+
+
+section.doc .carousel-indicators [data-bs-target] {
+    width: 20px;
+    height: 20px;
+    background-color:#a1a1a1;
+    border-radius: 50%;
+}
+section.doc .carousel-indicators .active {
+  background-color: #0d6efd;
+}
+
+section.doc .carousel-control-next, section.doc .carousel-control-prev {
+  opacity: 1;
+}
+.icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 1;
+  color: black;
+  display: grid;
+  place-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  border: 1px solid #000;
+}
+
+
+.doc img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
 }

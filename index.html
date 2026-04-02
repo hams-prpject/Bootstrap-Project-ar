@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="./src/main.css">
     <title>Document</title>
@@ -46,7 +45,7 @@
                         </a>
                     </li>
                 </ul>
-                <div>
+                <div class="position-relative">
                     <button class="btn btn-primary rounded-pill" type="button">تسجيل الدخول</button>
                     <button class="btn btn-outline-primary rounded-pill ms-2" type="button">انشاء الحساب</button>
                 </div>
@@ -112,7 +111,7 @@
                         <h1 class="my-4 fw-bold display-4">
                             استشارة طبية <br>
                             <div class="text-primary position-relative ">
-                                <img class="position-absolute z-n1 top-100 translate-middle-y"
+                                <img class="position-absolute z-n1 top-100 translate-middle-y img-fluid"
                                     src="./img/main/content/main.img.png" alt="">
                                 <span class="">بلمسة زر واحدة</span>
                             </div>
@@ -141,21 +140,164 @@
 
             </div>
     </main>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        const typingEl = document.querySelector('#typing');
-        let x = 'رعاية صحية متكاملة.'
-        let i = 0;
-        let time = setInterval(_ => {
-            if (i === x.length - 1) {
-                clearInterval(time)
-            }
-            typingEl.innerText += x[i]
-            i++;
-        }
-            , 100)
 
-    </script>
+    <!-- - mian sec -->
+
+    <!-- + numbers sec -->
+    <section id="numSec" class="my-5">
+        <div class="container shadow-lg bg-white rounded-5">
+            <div class="row row-cols-2 row-cols-lg-4 p-5 px-3 text-center">
+                <div class="col border-end">
+                    <div class="content">
+                        <img class="img-fluid mb-4" src="./img/numbers/Background.png" alt="num1">
+                        <div class="position-relative">
+                            <span class="numValue display-5 fw-bold" data-num="320"></span>
+                            <span class="text-primary position-absolute bottom-50 ms-2 fs-3">+</span>
+                        </div>
+                        <h4 class="mt-3 text-muted fs-5">استشارة ناجحة</h4>
+                    </div>
+                </div>
+                <div class="col border-end">
+                    <div class="content">
+                        <img class="img-fluid mb-4" src="./img/numbers/Background (1).png" alt="num1">
+                        <div class="position-relative">
+                            <span class="numValue display-5 fw-bold" data-num="1200">
+                            </span>
+                            <span class="text-primary position-absolute bottom-50 ms-2 fs-3">+</span>
+                        </div>
+                        <h4 class="mt-3 text-muted fs-5">مريض مسجل</h4>
+                    </div>
+                </div>
+                <div class="col border-end">
+                    <div class="content">
+                        <img class="img-fluid mb-4" src="./img/numbers/Background (2).png" alt="num3">
+                        <div class="position-relative">
+                            <span class="numValue display-5 fw-bold" data-num="450">
+
+                            </span>
+                        </div>
+                        <h4 class="mt-3 text-muted fs-5">طبيب خبير
+
+                        </h4>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="content">
+                        <img class="img-fluid mb-4" src="./img/numbers/Background (3).png" alt="num4">
+                        <div class="position-relative">
+                            <span class="numValue display-5 fw-bold" data-num="95">
+                            </span>
+                            <span class="text-primary position-absolute bottom-50 ms-2 fs-3">+</span>
+                        </div>
+                        <h4 class="mt-3 text-muted fs-5">شريك طبي
+
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- - numbers sec -->
+
+    <!-- + doctors section -->
+    <section class="doc">
+        <div class="container">
+            <div id="doctorsSidle" class="carousel  slide">
+                <div class="carousel-indicators">
+                    <button data-bs-target="#doctorsSidle" data-bs-slide-to="0" class="active" aria-current="true"
+                        aria-label="Slide 1">
+                    </button>
+                    <button data-bs-target="#doctorsSidle" data-bs-slide-to="1" aria-label="Slide 2">
+                    </button>
+                    <button data-bs-target="#doctorsSidle" data-bs-slide-to="2" aria-label="Slide 3">
+                    </button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                            <div class="col">
+                                <div class="card">
+                                    <img src="./img/doctors/1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card’s content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="./img/doctors/2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card’s content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="./img/doctors/3.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card’s content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="./img/doctors/4.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card’s content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="row">
+                            <div class="col">5</div>
+                            <div class="col">6</div>
+                            <div class="col">7</div>
+                            <div class="col">8</div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col">9</div>
+                            <div class="col">2</div>
+                            <div class="col">3</div>
+                            <div class="col">4</div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#doctorsSidle" data-bs-slide="prev">
+                    <span class="icon"> &lt;
+                    </span>
+
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#doctorsSidle" data-bs-slide="next">
+
+                    <span class="icon">&gt;</span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- - doctors section -->
+
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./main.js"></script>
+
 </body>
 
 </html>
